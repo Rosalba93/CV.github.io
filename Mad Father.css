@@ -1,0 +1,198 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Estilos generales */
+body{
+    color: #aa2929 ;
+	font-family:"Arial Black";
+	font-size: 18px;
+	line-height: 1.6;
+
+    margin: 0;
+    padding: 0;
+    background: url(https://i.pinimg.com/originals/ba/a1/cd/baa1cd157d9922488fd0bf4aea33108f.jpg);   
+    background-size: contain;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+
+h1 {
+	color: #ffffff;
+    background-color: #5a1111; 
+    font-family: Verdana, Geneva, sans-serif;
+	font-size: 50px;
+	margin: 40px 300px;
+	text-align: center;
+    border-radius: 50px;
+}
+
+.Contenido{
+    margin: 40px 100px;
+    font-size: 20px;
+    background-color: #723333;
+    color: #ffffff;
+    border-radius: 50px;
+    ul{
+        color: #ccc;
+     }
+     ol{
+        color: #ccc;
+     }
+     p{
+        text-align: justify;
+        color: rgb(255, 211, 182);
+        margin: 20px 20px;
+      }
+ }
+
+
+.Info{
+    margin: 40px 300px;
+    font-size: 20px;
+    background-color: #770000;
+    color: #ffffff;
+    border-radius: 50px;
+    Mad{
+    text-align: center;
+    }
+    ul{
+        color: #ccc;
+     }
+     ol{
+        color: #ccc;
+     }
+ }
+
+
+.Opc{
+    margin: 40px 200px;
+    font-size: 20px;
+
+    th{
+        background-color: #360000;
+        border-radius: 90px;
+      }
+    
+      h2{
+        text-align: center;
+      }
+    
+      iframe{
+        display: inline-block;
+        text-decoration: none;
+        color: #F0E6E9 ;
+        margin: 10px 300px;
+        padding: 10px 10px;
+        border-radius: 30px;
+      }
+    
+      p{
+        text-align: justify;
+        color: rgb(121, 121, 255);
+      }
+  
+  img{
+      margin: 40px 40px;
+      border-radius: 50px;
+      text-align: center;
+      }
+  }
+
+    .wrapper{
+        margin: 40px 100px;
+        font-size: 50px;
+      }
+
+    .wrapper .icon{
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 50%;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+        -size: 25px;
+        display: inline-block;
+        align-items: center;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        color: #333;
+        text-decoration: none;
+        text-align: center;
+      }
+      .wrapper .tooltip  {
+        position: absolute;
+        top: 0;
+        line-height: 1.5;
+        font-size: 14px;
+        background-color: #ffffff;
+        color: #ffffff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .wrapper .tooltip::before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        background-color: #ffffff;
+        bottom: -3px;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .wrapper .icon:hover .tooltip {
+        top: -45px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        text-align: center;
+      }
+      .wrapper .icon:hover span,
+      .wrapper .icon:hover .tooltip {
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .wrapper .facebook:hover,
+      .wrapper .facebook:hover .tooltip,
+      .wrapper .facebook:hover .tooltip::before {
+        background-color: #3b5999;
+        color: #ffffff;
+        text-align: center;
+      }
+      .wrapper .twitter:hover,
+      .wrapper .twitter:hover .tooltip,
+      .wrapper .twitter:hover .tooltip::before {
+        background-color: #46c1f6;
+        color: #ffffff;
+        text-align: center;
+      }
+      .wrapper .instagram:hover,
+      .wrapper .instagram:hover .tooltip,
+      .wrapper .instagram:hover .tooltip::before {
+        background-color: #e1306c;
+        color: #ffffff;
+        text-align: center;
+      }
+      .wrapper .github:hover,
+      .wrapper .github:hover .tooltip,
+      .wrapper .github:hover .tooltip::before {
+        background-color: #333333;
+        color: #ffffff;
+        text-align: center;
+      }
+      .wrapper .youtube:hover,
+      .wrapper .youtube:hover .tooltip,
+      .wrapper .youtube:hover .tooltip::before {
+        background-color: #de463b;
+        color: #ffffff;
+        text-align: center;
+      }
