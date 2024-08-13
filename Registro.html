@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="Registro.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="Designer (3).ico">
+
+    <!-- Agrega el SDK de Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+    <script>
+      // Configuración de Firebase
+      const firebaseConfig = {
+        apiKey: "TU_API_KEY",
+        authDomain: "TU_AUTH_DOMAIN",
+        projectId: "TU_PROJECT_ID",
+        storageBucket: "TU_STORAGE_BUCKET",
+        messagingSenderId: "TU_MESSAGING_SENDER_ID",
+        appId: "TU_APP_ID"
+      };
+
+      // Inicializa Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+    </script>
 </head>
 <body>
     <h2>Registro</h2>
@@ -20,11 +42,13 @@
         <br>
     </form>
     <center>
-        <a href="Index.html"><button type="submit" id="Registro">Ingresar</button></a>
+        <a href="Index.html"><button type="submit" id="Registro">Registrarse</button></a>
         <p>¿Ya tienes una cuenta?
             <a href="/Login.html">Inicia sesión aquí</a>
         </p>
     </center>
+
+    <!-- Incluye el archivo JavaScript para manejar el registro -->
+    <script src="Registro.js"></script>
 </body>
-<script type="module" src="/Registro.html"></script>
 </html>

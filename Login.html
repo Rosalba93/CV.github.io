@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="Login.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="Designer (3).ico">
+
+    <!-- Agrega el SDK de Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+    <script>
+      // Configuración de Firebase
+      const firebaseConfig = {
+        apiKey: "TU_API_KEY",
+        authDomain: "TU_AUTH_DOMAIN",
+        projectId: "TU_PROJECT_ID",
+        storageBucket: "TU_STORAGE_BUCKET",
+        messagingSenderId: "TU_MESSAGING_SENDER_ID",
+        appId: "TU_APP_ID"
+      };
+
+      // Inicializa Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+    </script>
 </head>
 <body>
     <h2>Inicio de Sesión</h2>
@@ -26,6 +48,8 @@
             <a href="/Registro.html">Registrarse aquí</a>
         </p>
     </center>
+
+    <!-- Incluye el archivo JavaScript para manejar el login -->
+    <script src="Login.js"></script>
 </body>
-<script type="module" src="/Login.html"></script>
 </html>
